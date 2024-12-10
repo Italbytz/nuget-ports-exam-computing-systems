@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackOnBuild>true</PackOnBuild>
+        <PackageVersion>9.0.0</PackageVersion>
+        <Authors>Robin Nunkesser</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>introduction.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/Italbytz/nuget-ports-exam-computing-systems</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Italbytz.Ports.Algorithms" Version="0.4.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="introduction.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>
